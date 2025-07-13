@@ -36,131 +36,115 @@
     a:hover {
       text-decoration: underline;
     }
- .profile-photo {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 2rem auto;
-  display: block;
-  border: 4px solid #007acc;
-}
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 1.5rem 0;
-}
 
-.social-icons a img {
-  width: 40px;
-  height: 40px;
-  fill: #007acc; /* icon color */
-  transition: transform 0.2s ease, filter 0.2s ease;
-  filter: invert(21%) sepia(98%) saturate(2536%) hue-rotate(183deg) brightness(93%) contrast(101%);
-}
+    .profile-photo {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #007acc;
+      display: block;
+      margin: 2rem auto;
+    }
 
-.social-icons a:hover img {
-  transform: scale(1.2);
-  filter: invert(45%) sepia(80%) saturate(3800%) hue-rotate(193deg) brightness(105%) contrast(100%);
-}
-.photo-bubble-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  margin: 2rem auto;
-  flex-wrap: wrap; /* For responsiveness */
-}
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 1.5rem 0;
+    }
 
-.profile-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #007acc;
-}
-.glowing-bubble {
-  display: inline-block;
-  padding: 1rem 2rem;
-  margin: 2rem auto;
-  background: #007acc;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-  border-radius: 30px;
-  box-shadow:
-    0 0 5px #00aaff,
-    0 0 15px #00aaff,
-    0 0 30px #00aaff,
-    0 0 40px #00aaff;
-  animation: glowPulse 2.5s infinite alternate;
-  text-align: center;
-  width: fit-content;
-}
+    .social-icons a img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s ease, filter 0.2s ease;
+      filter: invert(21%) sepia(98%) saturate(2536%) hue-rotate(183deg) brightness(93%) contrast(101%);
+    }
 
-@keyframes glowPulse {
-  0% {
-    box-shadow:
-      0 0 5px #00aaff,
-      0 0 15px #00aaff,
-      0 0 30px #00aaff,
-      0 0 40px #00aaff;
-  }
-  100% {
-    box-shadow:
-      0 0 10px #00d4ff,
-      0 0 25px #00d4ff,
-      0 0 40px #00d4ff,
-      0 0 60px #00d4ff;
-  }
-}
+    .social-icons a:hover img {
+      transform: scale(1.2);
+      filter: invert(45%) sepia(80%) saturate(3800%) hue-rotate(193deg) brightness(105%) contrast(100%);
+    }
 
+    .glowing-bubble {
+      display: inline-block;
+      padding: 1rem 2rem;
+      margin: 1rem auto;
+      background: red;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      box-shadow:
+        0 0 5px red,
+        0 0 15px red,
+        0 0 30px red,
+        0 0 40px red;
+      animation: glowPulse 2.5s infinite alternate;
+      text-align: center;
+      width: fit-content;
+    }
 
-</style>
+    @keyframes glowPulse {
+      0% {
+        box-shadow:
+          0 0 5px red,
+          0 0 15px red,
+          0 0 30px red,
+          0 0 40px red;
+      }
+      100% {
+        box-shadow:
+          0 0 10px red,
+          0 0 25px red,
+          0 0 40px red,
+          0 0 60px red;
+      }
+    }
   </style>
 </head>
 <body>
+
+  <!-- Glowing Bubble at the Top -->
+  <div class="glowing-bubble">
+    Website under construction
+  </div>
+
   <header>
     <h1>Hello, I'm Md. Abu Jaher Nayeem 👋</h1>
   </header>
+
+  <img src="https://jahernayeem.github.io/images/Profile_Image.jpg" alt="Profile Photo" class="profile-photo" />
 
   <section>
     <h2>About Me</h2>
     <p>I’m a biologist and bioinformatician interested in Bioinformatics, System Biology and Machine Learning.</p>
   </section>
 
+  <section>
+    <h2>Connect with Me</h2>
+    <div class="social-icons">
+      <a href="https://facebook.com/jahernayeem" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://instagram.com/jahernayeem" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://twitter.com/jahernayeem" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="X (Twitter)" />
+      </a>
+      <a href="https://www.researchgate.net/profile/Md-Nayeem-16" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/researchgate.svg" alt="ResearchGate" />
+      </a>
+      <a href="https://scholar.google.com/citations?hl=en&user=tYed4TkAAAAJ" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlescholar.svg" alt="Google Scholar" />
+      </a>
+      <a href="https://www.youtube.com/channel/jahernayeem" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube" />
+      </a>
+    </div>
   </section>
-<img src="https://jahernayeem.github.io/images/Profile_Image.jpg" alt="Profile Photo" class="profile-photo" />
-</section>
 
-  <div class="glowing-bubble">
-  Website under construction
-</div>
-  
-<section>
-  <h2>Connect with Me</h2>
-  <div class="social-icons">
-    <a href="https://facebook.com/jahernayeem" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" />
-    </a>
-    <a href="https://instagram.com/jahernayeem" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
-    </a>
-    <a href="https://twitter.com/jahernayeem" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="X (Twitter)" />
-    </a>
-    <a href="https://www.researchgate.net/profile/Md-Nayeem-16" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/researchgate.svg" alt="ResearchGate" />
-    </a>
-    <a href="https://scholar.google.com/citations?hl=en&user=tYed4TkAAAAJ" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlescholar.svg" alt="Google Scholar" />
-    </a>
-    <a href="https://www.youtube.com/channel/jahernayeem" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube" />
-    </a>
-  </div>
-</section>
   <section>
     <h2>Projects</h2>
     <ul>
@@ -178,5 +162,6 @@
   <footer>
     &copy; 2025 Md Abu Jaher Nayeem | Hosted on GitHub Pages
   </footer>
+
 </body>
 </html>
